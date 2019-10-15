@@ -16,7 +16,7 @@ Now when we extend our component with the BaseComponent, we can use this functio
 ## Error field messages
 All form field messages used in app has been moved to one error-msg.service.
 When we have to change any message, we don't have to change it in every place of our app.
-Now it's easy to control that. 
+Now it's easy to control all messages. 
 
 ## Forms
 - Move your forms to separate class.
