@@ -7,14 +7,11 @@ import { ErrorMsgService } from '../../services/error-msg.service';
 })
 export class BaseComponent implements OnInit {
 
-  // validationService: ErrorMsgService;
-
   constructor(
     private validationService: ErrorMsgService,
   ) { }
 
   ngOnInit() {
-    // this.validationService = new ErrorMsgService();
   }
 
   public getErrorMessage(validatorName: string) {
