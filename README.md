@@ -28,4 +28,4 @@ Now it's easy to control that.
 ## Validators
 When we use pattern validators it's a good idea to place it in one service class. 
 We provide pattern with function getPatterns(patternName: string).
-Service may cover most popular patterns for numbers, letters, zip, id, currency.
+Service may cover most popular patterns for numbers, letters, zip, id, currency etc.
