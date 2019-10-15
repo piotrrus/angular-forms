@@ -3,7 +3,7 @@
 ## Some ideas how to not repeat your code (keep DRY)
 
 A most common mistakes while creating Angular apps is:
-- Lack of component inheritance
+- Lack of component inheritance - we repeat the code.
 - Error field messages in html part of component is a usual string.
 - Forms are placed into component
 
