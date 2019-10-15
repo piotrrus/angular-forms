@@ -25,7 +25,8 @@ Now it's easy to control all messages.
   All fields with validators are placed into form. In situation of dynamic validation we do the same.
 - Subscribe status of the form or field and send this information if it necessary up.
 - When we use getters in forms class - path to formControl is shorter: paymentForm.name.hasError('error name')
-## Validators
+
+## Patterns Validators
 When we use pattern validators it's a good idea to place it in one service class. Example: PatternsLibraryService.
 We provide pattern with function getPatterns(patternName: string).
 Service may cover most popular patterns for numbers, letters, zip, id, currency etc.
