@@ -1,0 +1,31 @@
+<div fxFlex="90%" fxFlexOffset="10%" [formGroup]="paymentForm.form">
+      <div fxLayout="row">
+        <div fxFlex="49%">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              formControlName="payment_date"
+              placeholder="* Payment date"/>
+            <mat-error *ngIf="paymentForm.name.hasError('required')">
+              {{ getErrorMessage('required') }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div fxFlex="49%">
+          <mat-form-field class="full-width">
+            <input matInput formControlName="name" placeholder="* Name" />
+            <mat-error *ngIf="paymentForm.name.hasError('required')">
+              {{ getErrorMessage('required') }}
+            </mat-error>
+            <mat-error
+              *ngIf="paymentForm.name.touched && paymentForm.name.hasError('textValidator')">
+              {{ getErrorMessage('lettersOnly') }}
+            </mat-error>
+            <mat-error
+              *ngIf="paymentForm.name.touched && paymentForm.name.hasError('maxLength')">
+              {{ getErrorMessage('maxlength') }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+  </div>
+</div>
