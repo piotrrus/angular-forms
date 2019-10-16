@@ -1,6 +1,6 @@
 # Angular
 
-## Some ideas how to not repeat your code (keep DRY)
+## Some ideas how to not repeat your code (keep DRY) with examples
 
 A most common mistakes while creating Angular apps is:
 - Lack of component inheritance - we repeat the code.
