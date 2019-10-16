@@ -21,7 +21,7 @@ Now it's easy to control all messages.
 ## Forms
 - Move your forms to separate class.
 - Treat your component as controller in MVC pattern.
-  In this case component is just a contener for forms and data provider. And then it looks really nice and clear.
+  In this case component is data provider and a container for forms. And then it looks really nice and clear.
   All fields with validators are placed into form. In situation of dynamic validation we do the same.
 - Subscribe status of the form or field and send this information if it necessary up.
 - When we use getters in forms class - path to formControl is shorter: paymentForm.name.hasError('error name')
