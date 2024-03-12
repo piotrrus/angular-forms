@@ -12,14 +12,13 @@ import { PaymentForm } from '../../forms/Payments.form';
 
 export class PaymentFormsComponent extends BaseComponent  implements OnInit {
 
-  public paymentForm: PaymentForm;
+  public paymentForm: paymentForm = new paymentForm(this.fb);
   
   constructor(
     private fb: FormBuilder,
     private vs: ErrorMsgService,
   ) {
     super(vs);
-    this.paymentForm = new PaymentForm(fb);
   }
 
   ngOnInit() {
