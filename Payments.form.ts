@@ -4,17 +4,16 @@ import { textValidator } from '../validators/custom-text.validator';
 
 export class PaymentForm extends Base {
 
-    private _form: FormGroup;
+    private frm: FormGroup = this.createForm();
     
     constructor(
         public fb: FormBuilder,
     ) {
         super(fb);
-        this.createForm();
     }
    
-    createForm(): FormGroup {
-        this.form = this.fb.group({
+     public createForm(): FormGroup {
+          return this.fb.group({
             name: ['', [Validators.required, textValidator, Validators.maxLength(30)]],
             surname: ['', [Validators.required, textValidator, Validators.maxLength(30)]],
             account: ['', [Validators.required, , Validators.maxLength(26)]],
