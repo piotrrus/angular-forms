@@ -1,16 +1,11 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Base } from './Base.form';
 import { textValidator } from '../validators/custom-text.validator';
 
-export class PaymentForm extends Base {
+export class PaymentForm  {
 
     private frm: FormGroup = this.createForm();
     
-    constructor(
-        public fb: FormBuilder,
-    ) {
-        super(fb);
-    }
+    constructor(public fb: FormBuilder) {}
    
      public createForm(): FormGroup {
           return this.fb.group({
