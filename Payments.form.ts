@@ -1,13 +1,11 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { textValidator } from '../validators/custom-text.validator';
+import { BaseForm } from './BaseForm';
 
-export class PaymentForm  {
+export class PaymentForm  extends BaseForm {
+     protected frm = this.createForm();
 
-    private frm: FormGroup = this.createForm();
-    
-    constructor(public fb: FormBuilder) {}
-   
-     public createForm(): FormGroup {
+     protected createForm(): FormGroup {
           return this.fb.group({
             name: ['', [Validators.required, textValidator, Validators.maxLength(30)]],
             surname: ['', [Validators.required, textValidator, Validators.maxLength(30)]],
@@ -41,13 +39,6 @@ export class PaymentForm  {
 
     get payment_purpose() {
         return this.form.get('payment_purpose');
-    }
-    get form(): FormGroup {
-        return this._form;
-    }
-
-    set form(value: FormGroup) {
-        this._form = value;
     }
 
 }
