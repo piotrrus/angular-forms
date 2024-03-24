@@ -20,7 +20,7 @@ Now it's easy to control all messages.
 
 ## Forms
 - Move your forms to separate class.
-- Forms are extended from BaseForm, that covers some common code for forms. 
+- Form classes are extended from BaseForm, that covers some common code for forms. 
 - Subscribe status of the form component or field and emit this information if it necessary up.
 - When we use getters in forms class - path to formControl is shorter: paymentForm.name.hasError('error name')
 
