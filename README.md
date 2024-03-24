@@ -5,7 +5,7 @@
 A most common mistakes while creating Angular apps is:
 - Lack of component inheritance - we repeat the code.
 - Error field messages in html part of component is a usual string.
-- Forms are placed into component
+- Forms are separated classes, embedded into form component.
 
 ## Lack of component inheritance
 Usual components has a lot repeated code. It's common.
@@ -20,10 +20,8 @@ Now it's easy to control all messages.
 
 ## Forms
 - Move your forms to separate class.
-- Treat your component as controller in MVC pattern.
-  In this case component is data provider and a container for forms. And then it looks really nice and clear.
-  All fields with validators are placed into form. In situation of dynamic validation we do the same.
-- Subscribe status of the form or field and send this information if it necessary up.
+- Forms are extended from BaseForm, that covers some common code for forms. 
+- Subscribe status of the form component or field and emit this information if it necessary up.
 - When we use getters in forms class - path to formControl is shorter: paymentForm.name.hasError('error name')
 
 ## Patterns Validators
