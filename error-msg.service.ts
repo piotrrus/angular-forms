@@ -11,7 +11,7 @@ export class ErrorMsgService {
      */
     getValidatorErrorMessage(validatorName: string, value?: any) {
         
-        let messages = {
+        const messages = {
             'required':                 'To pole jest wymagane.',
             'maxlength':                'Przekroczono dopuszczalną ilość znaków.',
             'lettersOnly':              'Wstaw tylko litery.',
