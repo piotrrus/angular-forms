@@ -2,7 +2,7 @@
 
 ## Some ideas how to create forms according to some OOP rules
 
-A most common mistakes while creating Angular apps is:
+A most common mistakes while creating Angular apps are:
 - Lack of OOP rules  - for example inheritance - so we repeat the code.
 - Error field messages in html part of component is a usual string.
 - Forms are separated classes, embedded into form component.
