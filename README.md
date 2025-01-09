@@ -7,7 +7,7 @@ A most common mistakes while creating Angular apps are:
 - Error field messages in html part of component is a usual string.
 - Forms are separated classes, embedded into form component.
 
-## Lack OOP rules
+## OOP rules
 Forms are one of most used Angular functionality. Often placed in other components, mixed with form class declaration.
 According to DRY, and Single responsibility rule i prefer to divide form component into form declaration class and form component.
 Some common function for form component  has been move to Base Form Class - in this case function providing messages (getErrorMessage) for form fields.
