@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class PatternsLibraryService {
     getPatterns(patternName: string) {
-        let patterns = {
+        const patterns = {
             'NUMBERS_REGEXP':        '/^[0-9]*$/u',
             'LETTERS_REGEXP':        '^[a-zA-Z]+$',
             'CASH_REGEXP':           '^[\-]?[0-9]+[\,]?[0-9]{0,2}$',
